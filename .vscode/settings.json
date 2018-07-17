@@ -1,0 +1,39 @@
+{
+  // "workbench.colorTheme": "United Ubuntu",
+  // "workbench.colorTheme": "Dracula",
+  // This setting can be edited by user //
+  //Editor
+  "editor.fontFamily": " Menlo, Monaco, 'Courier New'",
+  "editor.letterSpacing": 0.55,
+  "editor.fontWeight": "275",
+  "editor.lineHeight": 28,
+  "editor.fontSize": 21,
+  "editor.formatOnSave": true,
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 4,
+  "editor.cursorBlinking": "solid",
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "all",
+  // Prettier
+  // Prettier Plugin should be downloaded
+  "prettier.tabWidth": 2,
+  "prettier.tabSize": 2,
+  "prettier.eslintIntegration": true,
+  "prettier.printWidth": 75,
+  "prettier.singleQuote": true,
+  // "prettier.trailingComma": "all",
+  "prettier.bracketSpacing": true,
+  // Terminal
+  "terminal.integrated.env.linux": {
+    "HOME": null
+  },
+  "terminal.integrated.fontSize": 18,
+  //Others and Uselful Ones
+  "files.trimTrailingWhitespace": true,
+  "files.autoSave": "afterDelay",
+  "window.zoomLevel": 2,
+  "window.openFilesInNewWindow": "on",
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false
+}
