@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import EventHandlers from './components/EventHandlers';
 import RenderingList from './components/RenderingList';
+import SetState from './components/SetState';
 
 class App extends Component {
   render() {
@@ -23,6 +24,7 @@ class App extends Component {
       <div className="App">
         <RenderingList titleName={componentTitles.titleName} />
         <EventHandlers />
+        <SetState />
       </div>
     );
   }
