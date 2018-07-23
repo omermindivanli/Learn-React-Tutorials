@@ -1,30 +1,28 @@
 import React, { Component } from 'react';
 import './App.css';
+import EventHandlers from './components/EventHandlers';
+import RenderingList from './components/RenderingList';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      title: 'Omer Mindivanli',
-      age: 24
-    };
-    this.onSubmit = this.onSubmit.bind(this);
-  }
-  onSubmit(event) {
-    event.preventDefault();
-    console.log('this.input.value');
-  }
   render() {
+    const componentTitles = [
+      {
+        titleId: 1,
+        titleName: 'render'
+      },
+      {
+        titleId: 2,
+        titleName: 'event'
+      },
+      {
+        titleId: 3,
+        titleName: 'state'
+      }
+    ];
     return (
       <div className="App">
-        <h2>
-          Full Name: <br />
-          {this.state.title}
-        </h2>
-        <h3>His Age: {this.state.age}</h3>
-        <form onSubmit={this.onSubmit}>
-          <input onChange={this.onChange} />
-        </form>
+        <RenderingList titleName={componentTitles.titleName} />
+        <EventHandlers />
       </div>
     );
   }
