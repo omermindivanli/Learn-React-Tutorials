@@ -20,7 +20,6 @@ class EventHandlers extends Component {
     let reply = prompt('Tjena!');
     console.log(reply);
   }
-
   render() {
     const componentName = '2. Event Handlers:';
     return (
