@@ -3,6 +3,7 @@ import './App.css';
 import EventHandlers from './components/EventHandlers';
 import RenderingList from './components/RenderingList';
 import SetState from './components/SetState';
+import EventExample from './components/EventExample';
 
 class App extends Component {
   render() {
@@ -25,6 +26,7 @@ class App extends Component {
         <RenderingList titleName={componentTitles.titleName} />
         <EventHandlers />
         <SetState />
+        <EventExample />
       </div>
     );
   }
