@@ -7,28 +7,38 @@ import EventExample from './components/EventExample';
 
 class Routers extends React.Component {
   render() {
-    const { title } = this.props;
+    const {
+      titleLesson1,
+      titleLesson2,
+      titleLesson3,
+      titleLesson4
+    } = this.props;
+    const stylesRoutedComponents = {
+      backgroundColor: 'yellow'
+    };
     return (
       <Router>
         <div>
           <ul style={{ marginLeft: -40 }}>
             <li>
-              <Link to="/renderingList">{title}</Link>
+              <Link to="/renderingList">{titleLesson1}</Link>
             </li>
             <li>
-              <Link to="/eventHandlers">Event Handlers</Link>
+              <Link to="/eventHandlers">{titleLesson2}</Link>
             </li>
             <li>
-              <Link to="/setState">What is setState ?</Link>
+              <Link to="/setState">{titleLesson3}</Link>
             </li>
             <li>
-              <Link to="/eventExample">eventExample</Link>
+              <Link to="/eventExample">{titleLesson4}</Link>
             </li>
           </ul>
-          <Route path="/renderingList" component={RenderingList} />
-          <Route path="/eventHandlers" component={EventHandlers} />
-          <Route path="/setState" component={SetState} />
-          <Route path="/eventExample" component={EventExample} />
+          <div style={stylesRoutedComponents}>
+            <Route path="/renderingList" component={RenderingList} />
+            <Route path="/eventHandlers" component={EventHandlers} />
+            <Route path="/setState" component={SetState} />
+            <Route path="/eventExample" component={EventExample} />
+          </div>
         </div>
       </Router>
     );

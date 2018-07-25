@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
+const propTypes = {
+  onClicked: PropTypes.func
+};
 
 class EventHandlers extends Component {
   constructor(props) {

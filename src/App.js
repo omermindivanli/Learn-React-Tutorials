@@ -8,7 +8,12 @@ class App extends Component {
     return (
       <div className="App">
         <Welcome />
-        <Routers title="Rendering A List" />
+        <Routers
+          titleLesson1="Rendering A List"
+          titleLesson2="Event Handlers"
+          titleLesson3="What is setState?"
+          titleLesson4="Example An Event Handler"
+        />
       </div>
     );
   }

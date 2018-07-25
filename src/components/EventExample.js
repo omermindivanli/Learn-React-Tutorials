@@ -3,13 +3,13 @@ import React, { Component } from 'react';
 class EventExample extends Component {
   state = {
     surname: 'freshman',
-    title: '3. Event an example:'
+    title: '4. Event Example:'
   };
   onClick() {
     alert('It was a joke! We love you :)');
   }
   componentDidMount() {
-    this.setState({ title: '4. examplessss' });
+    this.setState({ title: '4. Great Event Example' });
   }
   onChange(event) {
     event.preventDefault();

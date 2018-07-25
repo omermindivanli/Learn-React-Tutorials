@@ -1,22 +1,27 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class SetState extends Component {
   state = {
-    surname: 'freshman'
+    surname: 'Mindivanli'
   };
   componentWillMount() {
-    this.setState({ surname: 12312 });
+    this.setState({ surname: 'Mindivanlisson' });
   }
   render() {
-    const componentName = '3. SetState:';
+    const title = '3. What is SetState?';
     return (
       <div>
-        <strong>{componentName}</strong>
+        <strong>{title}</strong>
         <br />
         {this.state.surname}
       </div>
     );
   }
 }
+
+SetState.propTypes = {
+  surname: PropTypes.string
+};
 
 export default SetState;
