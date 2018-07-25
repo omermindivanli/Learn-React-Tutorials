@@ -13,6 +13,7 @@ class App extends Component {
           titleLesson2="Event Handlers"
           titleLesson3="What is setState?"
           titleLesson4="Example An Event Handler"
+          titleLesson5="LifeCycle"
         />
       </div>
     );

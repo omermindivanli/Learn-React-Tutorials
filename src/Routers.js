@@ -4,6 +4,7 @@ import EventHandlers from './components/EventHandlers';
 import RenderingList from './components/RenderingList';
 import SetState from './components/SetState';
 import EventExample from './components/EventExample';
+import LifeCycleMethods from './components/LifeCycleMethods';
 
 class Routers extends React.Component {
   render() {
@@ -11,10 +12,16 @@ class Routers extends React.Component {
       titleLesson1,
       titleLesson2,
       titleLesson3,
-      titleLesson4
+      titleLesson4,
+      titleLesson5
     } = this.props;
-    const stylesRoutedComponents = {
-      backgroundColor: 'yellow'
+
+    const styles = {
+      backgroundColor: 'yellow',
+      marginTop: 30,
+      marginLeft: 80,
+      marginRight: 80,
+      padding: 10
     };
     return (
       <Router>
@@ -32,12 +39,16 @@ class Routers extends React.Component {
             <li>
               <Link to="/eventExample">{titleLesson4}</Link>
             </li>
+            <li>
+              <Link to="/lifeCycleMethods">{titleLesson5}</Link>
+            </li>
           </ul>
-          <div style={stylesRoutedComponents}>
+          <div style={styles}>
             <Route path="/renderingList" component={RenderingList} />
             <Route path="/eventHandlers" component={EventHandlers} />
             <Route path="/setState" component={SetState} />
             <Route path="/eventExample" component={EventExample} />
+            <Route path="/lifeCycleMethods" component={LifeCycleMethods} />
           </div>
         </div>
       </Router>

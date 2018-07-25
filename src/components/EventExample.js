@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import titles from './titles';
 
 class EventExample extends Component {
   state = {

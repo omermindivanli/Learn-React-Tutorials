@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-
-const propTypes = {
-  onClicked: PropTypes.func
-};
+import titles from './titles';
 
 class EventHandlers extends Component {
   constructor(props) {
@@ -21,10 +18,6 @@ class EventHandlers extends Component {
   onClick() {
     alert('Hej hej');
   }
-  onMouseOver() {
-    let reply = prompt('Tjena!');
-    console.log(reply);
-  }
   render() {
     const componentName = '2. Event Handlers:';
     return (
@@ -32,18 +25,23 @@ class EventHandlers extends Component {
         {this.state.class}
         <strong>{componentName}</strong>
         <p>
-          Name: <br />
+          Name:
           {this.state.name}
         </p>
         <p>His Age: {this.state.age}</p>
         <form onSubmit={this.onSubmit}>
-          <input onChange={this.onChange} />
+          <input onChange={this.onChange} placeholder="OnChange Event" />
         </form>
-        <button onClick={this.onClick}>Button</button>
-        <button onMouseOver={this.onMouseOver}>On Mouse Button</button>
+        <button onClick={this.onClick}>OnClick Event!</button>
       </div>
     );
   }
 }
+
+EventHandlers.propTypes = {
+  componentName: PropTypes.string,
+  onClick: PropTypes.func,
+  onSubmit: PropTypes.func
+};
 
 export default EventHandlers;
